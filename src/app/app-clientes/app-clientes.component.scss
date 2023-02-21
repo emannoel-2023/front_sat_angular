@@ -1,0 +1,74 @@
+@font-face {
+  font-family: Goldplay2;
+  src: url(../../assets/Fonts/Goldplay-Regular.woff2);
+}
+.bigContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+  margin: auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 364px;
+  height: 290px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.header_card {
+  width: 364px;
+  height: auto;
+  background: #3cbd7c;
+  flex: none;
+  border-radius: 10px 10px 0 0;
+}
+.texto {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin: 10px;
+  font-family: Goldplay2;
+}
+.texto_card {
+  width: 321px;
+  height: 19px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0px 10px;
+}
+.texto_card p {
+  word-break: break-all;
+  color: #0c4476;
+}
+p {
+  font-family: Goldplay2;
+}
+.btn {
+  padding: 4px 16px;
+  left: calc(50% - 92px / 2);
+  background: #ffffff;
+  border-radius: 6px;
+  border: solid 2px #df2121;
+  color: #b92222;
+  &:hover {
+    color: white;
+    background: #b92222;
+  }
+  transition: 0.5s;
+  font-family: Goldplay2;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 2px;
+  margin-top: 10px;
+}

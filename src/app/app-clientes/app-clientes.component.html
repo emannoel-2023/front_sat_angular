@@ -1,0 +1,20 @@
+<!doctype html>
+<div class="bigContainer">
+  <div class="container" *ngFor="let clientes of obj.__zone_symbol__value">
+    <div class="header_card">
+      <p class="texto">Nome: {{ clientes.nome }}</p>
+    </div>
+    <div class="texto_card">
+      <p>Telefone :{{ clientes.telefone }}</p>
+      <p>E-mail :{{ clientes.email }}</p>
+      <p>CPF :{{ clientes.cpf }}</p>
+      <p>CNPJ :{{ clientes.cnpj }}</p>
+      <button type="button" (click)="deleteApi(clientes.id)" class="btn">
+        Excluir cliente
+      </button>
+    </div>
+  </div>
+  <div class="nao_existe_dados" *ngIf="!obj.__zone_symbol__value.length">
+    <p>Poxa, não encontrei nenhum cliente (｡╯︵╰｡)</p>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Terminal=false
+Encoding=UTF-8
+Version=1.1
+Name=Eclipse IDE for Java Developers - 2021-12
+Exec=env GTK_IM_MODULE=ibus /home/davi/eclipse/java-2021-12/eclipse/eclipse
+Categories=Development;IDE;
+Icon=/home/davi/eclipse/java-2021-12/eclipse/icon.xpm

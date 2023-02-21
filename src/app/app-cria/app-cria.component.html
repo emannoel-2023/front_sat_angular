@@ -1,0 +1,45 @@
+<!doctype html>
+<div class="BigContainer">
+  <div class="container">
+    <div class="barra_nome">
+      <p class="label">Nome:</p>
+      <input type="text" placeholder="Nome" class="input" [(ngModel)]="nome" required="nome"/>
+    </div>
+    <div class="barra_nome">
+      <p class="label">Telefone:</p>
+      <input
+        type="number"
+        placeholder="Telefone"
+        class="input"
+        [(ngModel)]="telefone"
+      />
+    </div>
+    <div class="barra_nome">
+      <p class="label">E-mail:</p>
+      <input
+        type="text"
+        placeholder="E-mail"
+        class="input"
+        [(ngModel)]="email" required email
+      />
+    </div>
+    <div class="radio">
+      <input type="radio" (click)="show = !show" /> Quero me cadastrar com CNPJ/>
+    </div>
+    <div class="barra_nome" *ngIf="show">
+      <p class="label">CPF:</p>
+      <input type="text" placeholder="CPF" class="input" [(ngModel)]="cpf" />
+    </div>
+    <div class="barra_nome" *ngIf="!show">
+      <p class="label">CNPJ:</p>
+      <input type="text" placeholder="CNPJ" class="input" [(ngModel)]="cnpj" />
+    </div>
+    <button
+      type="button"
+      (click)="postApi(nome, email, cpf, telefone, cnpj)"
+      class="btn"
+    >
+      Enviar
+    </button>
+  </div>
+</div>
